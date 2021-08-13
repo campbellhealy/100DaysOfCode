@@ -6,6 +6,7 @@ from os import system
 def name_generator():
     system('cls')
     print('Band Name Generator')
+    print('*******************')
     place = input('Name your favourite place: \n')
     food = input('What is your favourite food? \n')
     system('cls')

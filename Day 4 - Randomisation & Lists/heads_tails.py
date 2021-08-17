@@ -1,4 +1,5 @@
 # heads_tails.py
+# A simple coin Toss tool
 
 from random import randint
 

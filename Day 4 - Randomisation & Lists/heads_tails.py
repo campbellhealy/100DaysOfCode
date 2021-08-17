@@ -2,7 +2,7 @@
 
 from random import randint
 
-x = randint(0, 1)
+x = randint(0, 2)
 
 if x == 1:
     print("Heads")

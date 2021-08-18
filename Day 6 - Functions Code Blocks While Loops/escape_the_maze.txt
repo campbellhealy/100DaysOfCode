@@ -1,0 +1,36 @@
+# escape_the_maze.py
+'''
+    This time its not the hurdles but a maze. Following the previous task
+    with variable heights. I noted the reeborg went up and down each hurdle.
+    IE moved up and down in the grid. This is what I had to remember.
+
+    I worked through this to find a solution getting to a place like the 
+    lesson solution, below, but I found that it did work for the standard maps,
+    but failed to turn right where the break was in the middle of the corridor.
+    I may come back to this, but I shall plough rather than ponder this.
+'''
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+
+while front_is_clear():
+    move()
+
+turn_left()    
+
+
+
+while not at_goal():
+    if front_is_clear():
+        move()
+    
+    elif right_is_clear():
+        turn_right()
+        move
+    elif front_is_clear():
+        move()
+    else:
+        turn_left()

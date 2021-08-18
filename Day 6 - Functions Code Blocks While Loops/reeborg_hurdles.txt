@@ -1,0 +1,34 @@
+# reeborg_hurdles.py
+'''
+    This is a simple move the robot game where there are a limited number 
+    of commands, moving the robot character around a grid, over hurdles.
+    The robot can only turn left, therefore to turn right it must turn 
+    left three times.
+    To prevent repetative code a function is designed to turn right.
+    Similarly there are six hurdles, this can also be converted into a 
+    function. This hop function, ends on the square after a hurdle and ends 
+    by facing reeborg to the next hurdle. As the last command in the hop 
+    function does not move reeborg, it remains on the final square, expected 
+    as the finish line. This removes the need for a separate function just 
+    for the last hurdle. Therefore a For loop can be put in place with a range to
+    reuse the hop function the appropriate number of times.
+    https://reeborg.ca/reeborg.html
+'''
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def hop():
+    move()
+    turn_left()
+    move()
+    turn_right()
+    move() 
+    turn_right()
+    move()
+    turn_left()
+
+for hurdle in range(6):
+    hop()

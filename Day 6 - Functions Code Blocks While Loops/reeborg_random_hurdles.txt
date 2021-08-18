@@ -1,6 +1,6 @@
 # reeborg_hurdles.py
 '''
-    Like the previous hurdels game , but this time the number and spacing 
+    Like the previous hurdles game , but this time the number and spacing 
     of hurdles changes with each game.
 
     https://reeborg.ca/reeborg.html

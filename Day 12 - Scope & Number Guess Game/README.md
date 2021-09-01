@@ -1,6 +1,6 @@
 #### READ ME
 
-The aim of today's lesson was to build the guess a number game from scratch without suuport.
+The aim of today's lesson was to build the guess a number game from scratch without support.
 
 You are shown the basics of what the game should do, how it would look (sort of) and then get on with it.
 
